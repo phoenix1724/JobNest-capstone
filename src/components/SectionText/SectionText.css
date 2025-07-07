@@ -1,0 +1,48 @@
+/* SectionText.css */
+
+.section-text-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.section-text-heading {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.section-text-subtitle {
+  display: inline-block;
+  font-weight: 400;
+  color: #555;
+  margin-left: 0.5rem;
+}
+
+.section-text-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.section-text-link:hover {
+  color: #0056b3;
+}
+
+.section-text-icon {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.section-text-link:hover .section-text-icon {
+  transform: translateX(4px);
+}

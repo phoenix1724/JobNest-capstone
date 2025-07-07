@@ -1,0 +1,151 @@
+.latest-jobs-section {
+  padding: 5rem 0;
+  position: relative;
+}
+
+.latest-jobs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.latest-jobs-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .latest-jobs-grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .latest-jobs-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.job-card {
+  display: flex;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-8px);
+}
+
+.job-logo {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-img {
+  width: 2.5rem;
+  object-fit: contain;
+}
+
+.job-info {
+  flex: 1;
+}
+
+.job-title-link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.job-title-link:hover {
+  color: #5533ff;
+}
+
+.job-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.job-subtext {
+  color: #6b7280;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.job-meta {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.job-type {
+  font-size: 0.875rem;
+  padding: 0.25rem 0.625rem;
+  color: #56cdad;
+  background-color: #56cdad1a;
+  border: 1px solid #56cdad29;
+  border-radius: 9999px;
+}
+
+.vertical-divider {
+  width: 1px;
+  height: 1.75rem;
+  background-color: #e5e7eb;
+  margin: 0 0.75rem;
+}
+
+.job-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.job-field {
+  font-size: 0.875rem;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  border: 1px solid transparent;
+  background-color: #f0f0f0;
+  color: #333;
+  white-space: nowrap;
+}
+
+.job-field-yellow {
+  border-color: #ffb93637;
+  background-color: #ffb9360f;
+  color: #ffb836;
+}
+
+.job-field-purple {
+  border-color: #4540de1c;
+  background-color: #4540de0f;
+  color: #4540deda;
+}
+
+.pattern-img {
+  position: absolute;
+  top: 0;
+  right: 2.5rem;
+  width: 450px;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.1;
+  z-index: -1;
+}
